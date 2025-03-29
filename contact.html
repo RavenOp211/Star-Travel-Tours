@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="CSS3/style.css">
+</head>
+<body>
+    <div class = "container">
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="images\video.mp4" type="video/mp4">
+        </video>
+
+        <div class="navigation">
+            <a href="index.html" class=" anim">Home</a>                 
+            <a href="About Us.html" class=" anim">About Us</a>
+            <a href="contact.html" class=" anim">Contact</a>
+        </div>
+        
+    <div class="contact-form anim">
+        <h1>Contact Us</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="hidden" name="access_key" value="39a271da-cd98-4de1-9f38-1cb7e5e04c90">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        <a href="successful.html">
+          <button type="submit">Send Message </button>
+        </a>
+        </form>
+    </div>
+</body>
+</html>

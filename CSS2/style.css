@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'inter';
+    font-weight:100;
+
+}
+*::-webkit-scroll{
+  display:none;
+}
+*{
+  scrollbar-width:none;
+}
+  
+
+
+.container{
+    width: 100%;
+    height: 120vh;
+    background-color:rgba(0,0,0,0.4);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.navigation{
+   position: absolute;
+   top: 50px;
+   right:50px;
+}
+
+
+.navigation a{
+    font-size: 18px;
+    margin: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid#fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+}
+
+.navigation a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.background-clip{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.card1 {
+    box-sizing: border-box;
+    width: 1400px;
+    height: 180px;
+    background: rgba(217, 217, 217, 0.404);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    right: 45px;
+    top: 120px;
+  }
+  
+  .card1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .card1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+  .car-desc{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 20px;
+
+  }
+  
+  /* From Uiverse.io by Yaya12085 */ 
+.card2 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  bottom: 170px;
+  left:155px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.card3 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  bottom: 170px;
+  left:500px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.card4 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  bottom: 170px;
+  left:845px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.card5 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  bottom: 170px;
+  left:1190px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.card6 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  top: 630px;
+  left:1190px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.card7 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  top: 630px;
+  left:155px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.card8 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  top: 630px;
+  left:500px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.card9 {
+  max-width: 300px;
+  border-radius: 0rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  position:absolute;
+  top: 630px;
+  left:845px;
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(239, 205, 255);
+}
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.imagecar{
+  position:relative;
+  left:450px;
+  top: 10px;
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.anim{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUpFadeIn 2s forwards; /* 2s is the duration of the animation */
+}
+
+
+
+@keyframes slideUpFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .background-clip{
+        width:auto;
+        height: 100%;
+    }
+}

@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+    font-family:'inter';
+    font-weight:100;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.4);
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.navigation{
+   position: absolute;
+   top: 50px;
+   right:50px;
+}
+
+
+.navigation a{
+    font-size: 18px;
+    margin: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid#fff;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition-duration: 0.5s;
+}
+
+.navigation a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.content {
+    margin-top: 5%;
+    max-width: 600px;
+    position:relative;
+    top:50px;
+}
+
+.content h1{
+    font-size: 30px;
+    position:relative;
+    right:85%;
+    bottom: 200px;
+    color: #ffffff;
+}
+
+.content h2{
+    font-size:50px ;
+    position:relative;
+    right: 87%;
+    bottom: 200px;
+    color: #ffffff;
+    animation-delay: 0.5s;
+}
+
+.content h3{
+    font-size:23px ;
+    position: relative;
+    right:80%;
+    bottom:160px;
+    color: #ffffff;
+    font-weight:bold;
+    animation-delay: 0.5s;
+    letter-spacing: 2px;
+}
+.content h4{
+    font-size:23px ;
+    position: relative;
+    right: 80%;
+    bottom:150px;
+    color: #ffffff;
+    font-weight:bold;
+    animation-delay: 0.5s;
+    letter-spacing: 2px;
+}
+.content h5{
+    font-size:23px ;
+    position: relative;
+    right:80%;
+    bottom:140px;
+    color: #ffffff;
+    font-weight:bold;
+    animation-delay: 0.5s;
+    letter-spacing: 2px;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    letter-spacing: 1px;
+   }
+   
+   a.learn-more {
+    width: 12rem;
+    bottom:110px;
+    right:85%;
+   }
+   
+   a.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #ffffff;
+    border-radius: 1.625rem;
+   }
+   
+   a.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #ffffff;
+   }
+   
+   a.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   a.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #000000;
+    border-right: 0.125rem solid #000000;
+    transform: rotate(45deg);
+   }
+   
+   a.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   a:hover .circle {
+    width: 100%;
+   }
+   
+   a:hover .circle .icon.arrow {
+    background: #000000;
+    transform: translate(1rem, 0);
+   }
+   
+   a:hover .button-text {
+    color: #000000;
+   }
+
+.card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right:150px;
+    width: 320px;
+    border-radius: 24px;
+    line-height: 1.6;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 36px;
+    border-radius: 22px;
+    color: #000000;
+    overflow: hidden;
+    background: #e9ecef;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .details::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #adb5bd;
+    z-index: -1;
+    transform-origin: bottom;
+  
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .details::after {
+    position: absolute;
+    content: "";
+    top: -8%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%);
+    background: #ced4da;
+    z-index: -2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .details svg {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .details .para {
+    z-index: 1;
+    opacity: 1;
+    font-size: 18px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .details .link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .details .link:hover {
+    text-decoration: underline;
+  }
+  
+  .card:hover {
+    transform: translate(0px, -16px);
+  }
+  
+  .card:hover .details::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card:hover .details::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+
+.anim{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUpFadeIn 2s forwards; /* 2s is the duration of the animation */
+}
+
+
+@keyframes slideUpFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio:16/9) {
+    .background-clip{
+        width:auto;
+        height: 100%;
+    }
+}
