@@ -385,32 +385,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .anim{
     opacity: 0;
     transform: translateY(20px);
@@ -439,4 +413,114 @@
         width:auto;
         height: 100%;
     }
+}
+@media (max-width: 1200px) {
+  .container {
+    flex-direction:column;
+    height: 100%;
+  }
+
+  .card1 {
+    width: 90%;
+    height: 150px;
+    right: 5%;
+    top: 100px;
+  }
+
+  .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    max-width: 250px;
+    top: 250px;
+    left: auto;
+    margin: 10px ;
+    position: relative;
+  }
+
+  .imagecar {
+    width: 50%;
+    left: 45%;
+  }
+  .navigation {
+    top: 20px;
+    right: 20px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  .car-desc {
+    font-size: 17px;
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card1 {
+    width: 95%;
+    height: 120px;
+    top: 80px;
+    right: 2.5%;
+  }
+
+  .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    max-width: 200px;
+    margin: 15px auto;
+    top:200px;
+  }
+
+  .imagecar {
+    width: 30%;
+    left: 30%;
+  }
+
+  .navigation {
+    top: 20px;
+    right: 20px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+  .car-desc {
+    font-size: 11px;
+    top: 30px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card1 {
+    width: 80%;
+    height: auto;
+    top: 60px;
+    right: 0;
+  }
+
+  .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    max-width: 180px;
+    margin: 10px auto;
+  }
+
+  .imagecar {
+    width: 20%;
+    left: 25;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .car-desc {
+    font-size: 10px;
+    top: 30px;
+    left: 20px;
+  }
 }

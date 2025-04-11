@@ -307,16 +307,165 @@ a {
 }
 
 
-@media (min-aspect-ratio:16/9) {
-    .background-clip{
-        width: 100%;
-        height: auto;
-    }
+
+@media (max-width: 1024px) {
+  .background-clip {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit:cover;
+  }
 }
 
-@media(max-aspect-ratio:16/9) {
-    .background-clip{
-        width:auto;
-        height: 100%;
-    }
+@media (max-width: 768px) {
+  .background-clip {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+
+@media (max-width: 480px) {
+  .background-clip {
+    width: auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+  }
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height:100%;
+    padding: 20px;
+    width:auto;
+  }
+
+  .navigation {
+    top: 20px;
+    right: 20px;
+  }
+
+  .navigation a {
+    font-size: 16px;
+    padding: 5px 15px;
+  }
+
+  .content h1, .content h2, .content h3, .content h4, .content h5 {
+    font-size: 24px;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    position: static;
+  }
+
+  a.learn-more {
+    width: 80%;
+    top: 25px;
+    text-align:center;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .card {
+    position: relative;
+    right: 0;
+    width: 50%;
+    top:100px;
+    margin: auto;
+  }
+
+  .details {
+    padding: 20px;
+  }
+
+  .details .para {
+    font-size: 16px;
+  }
+
+  .details .link {
+    font-size: 14px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    width:auto;
+    height:100%;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .content h1, .content h2, .content h3, .content h4, .content h5 {
+    font-size: 20px;
+  }
+
+  a.learn-more {
+    width: 100%;
+   text-align: center;
+    top: 65px;
+   
+  }
+
+  .card {
+    width: 50%;
+    margin: 140px auto;
+    
+  }
+
+  .details .para {
+    font-size: 14px;
+  }
+
+  .details .link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    width:auto;
+    height:100%;
+  }
+
+  .navigation a {
+    font-size: 12px;
+    padding: 5px 8px;
+   
+  }
+
+  .content h1, .content h2, .content h3, .content h4, .content h5 {
+    font-size: 18px;
+  }
+
+  a.learn-more {
+    width: 7rem;
+  }
+
+  .card {
+    width: 30%;
+    margin: 10px ;
+  }
+
+  .details {
+    padding: 15px;
+  }
+
+  .details .para {
+    font-size: 12px;
+  }
+
+  .details .link {
+    font-size: 10px;
+  }
 }
