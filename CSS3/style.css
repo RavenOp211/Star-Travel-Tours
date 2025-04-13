@@ -232,28 +232,29 @@
     .container {
         flex-direction: column;
         padding: 20px;
+        height:93vh;
     }
 
     .contact-form {
-        width: 50%;
+        width: 80%;
         padding: 15px;
     }
     .contact-form h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .contact-form input,
     .contact-form textarea {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .contact-form button {
-        font-size: 14px;
+        font-size: 15px;
         padding: 8px;
     }
 
     .navigation a {
-        font-size: 14px;
+        font-size: 15px;
         padding: 5px 10px;
     }
 }

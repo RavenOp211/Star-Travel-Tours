@@ -339,7 +339,7 @@ a {
 @media (max-width: 1024px) {
   .container {
     flex-direction: column;
-    height:100%;
+    height:100vh;
     padding: 20px;
     width:auto;
   }
@@ -373,7 +373,7 @@ a {
   .card {
     position: relative;
     right: 0;
-    width: 50%;
+    width: 30%;
     top:100px;
     margin: auto;
   }
@@ -395,9 +395,9 @@ a {
 
 @media (max-width: 768px) {
   .container {
-    padding: 15px;
     width:auto;
-    height:100%;
+    height:100vh;
+    flex-direction:column;
   }
 
   .navigation a {
@@ -417,8 +417,8 @@ a {
   }
 
   .card {
-    width: 50%;
-    margin: 140px auto;
+    width: 40%;
+   top:100px;
     
   }
 
@@ -435,11 +435,11 @@ a {
   .container {
     padding: 10px;
     width:auto;
-    height:100%;
+    height:93vh;
   }
 
   .navigation a {
-    font-size: 12px;
+    font-size: 14px;
     padding: 5px 8px;
    
   }
@@ -449,12 +449,12 @@ a {
   }
 
   a.learn-more {
-    width: 7rem;
+    width: 120%;
   }
 
   .card {
-    width: 30%;
-    margin: 10px ;
+    width: 70%;
+   top:60px;
   }
 
   .details {
@@ -462,7 +462,7 @@ a {
   }
 
   .details .para {
-    font-size: 12px;
+    font-size: 20px;
   }
 
   .details .link {
